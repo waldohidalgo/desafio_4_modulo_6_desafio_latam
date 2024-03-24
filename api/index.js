@@ -15,7 +15,7 @@ app.engine(
   })
 );
 app.set("view engine", ".hbs");
-app.set("views", "./api/views");
+app.set("views", path.join(__dirname, "views"));
 
 app.use("/", rutas);
 app.listen(PORT, () => {
