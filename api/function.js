@@ -47,9 +47,19 @@ function crearRandomDate() {
 
   const day = Math.floor(Math.random() * 28) + 1;
 
-  const fecha = moment({ year, month: month - 1, day }).format("LL");
+  const hora = Math.floor(Math.random() * 24);
 
-  return fecha == "Fecha inválida" ? "24 de marzo de 2024" : fecha;
+  const minuto = Math.floor(Math.random() * 60);
+
+  const segundo = Math.floor(Math.random() * 60);
+
+  const fecha = moment(
+    new Date(year, month, day, hora, minuto, segundo)
+  ).format("dddd, MMMM D, YYYY h:mm:ss A");
+  const fechaFormateada = fecha.charAt(0).toUpperCase() + fecha.slice(1);
+  return fechaFormateada == "Fecha inválida"
+    ? "Jueves, noviembre 16, 2023 9:38:13 PM"
+    : fechaFormateada;
 }
 
 function mostrarEnConsolaConEstilos(data, sexo) {

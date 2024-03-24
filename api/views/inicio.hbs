@@ -1,12 +1,12 @@
 <header class="py-3 text-center">
-  <h1>Usuarios Registrados en la Clínica</h1>
+  <h1 class="titulo_principal">Usuarios Registrados en la Clínica</h1>
 </header>
 
 <section class="container border border-primary mb-3">
-  <h2 class="text-center text-decoration-underline py-3">
+  <h2 class="text-center text-decoration-underline py-3 titulo_secundario">
     Lista de usuarios Masculinos
   </h2>
-  <h3 class="text-center bg-dark text-light py-2">
+  <h3 class="text-center bg-dark text-light py-2 titulo_terciario">
     Cantidad de usuarios: {{largoArray datamale}}
   </h3>
   {{#if datamale.length}}
@@ -39,10 +39,10 @@
   {{/if}}
 </section>
 <section class="container border border-primary">
-  <h2 class="text-center text-decoration-underline py-3">
+  <h2 class="text-center text-decoration-underline py-3 titulo_secundario">
     Lista de usuarios Femeninos
   </h2>
-  <h3 class="text-center bg-dark text-light py-2">
+  <h3 class="text-center bg-dark text-light py-2 titulo_terciario">
     Cantidad de usuarios: {{largoArray datafemale}}
   </h3>
   {{#if datafemale.length}}

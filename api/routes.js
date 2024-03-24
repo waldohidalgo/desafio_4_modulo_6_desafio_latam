@@ -15,7 +15,7 @@ router.use(
     path.join(__dirname, "..", "node_modules", "bootstrap", "dist", "js")
   )
 );
-
+router.use("/public", express.static(path.join(__dirname, "..", "public")));
 router.get("/", registrarUsuarios);
 
 router.use((err, req, res, next) => {
