@@ -17,9 +17,9 @@ app.engine(
 app.set("view engine", ".hbs");
 app.set("views", "./api/views");
 
+app.use("/", rutas);
 app.listen(PORT, () => {
   console.log(`El servidor está inicializado en el puerto ${PORT}`);
 });
 
-app.use("/", rutas);
 module.exports = app;
