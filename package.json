@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node api/index.js",
     "server": "nodemon api/index.js",
-    "build": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
