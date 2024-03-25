@@ -1,7 +1,7 @@
 .titulo_principal,
 .titulo_secundario,
 .titulo_terciario {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Merriweather", serif;
   font-weight: bold;
 }
 
@@ -11,4 +11,11 @@ body {
 }
 section {
   background-color: white;
+}
+
+table {
+  width: max-content !important;
+  @media screen and (min-width: 768px) {
+    width: 100% !important;
+  }
 }

@@ -15,6 +15,13 @@ router.use(
     path.join(__dirname, "..", "node_modules", "bootstrap", "dist", "js")
   )
 );
+
+router.use(
+  "/typewriter",
+  express.static(
+    path.join(__dirname, "..", "node_modules", "typewriter-effect", "dist")
+  )
+);
 router.use("/public", express.static(path.join(__dirname, "..", "public")));
 router.get("/", registrarUsuarios);
 

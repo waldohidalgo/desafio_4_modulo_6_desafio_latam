@@ -99,16 +99,10 @@ function mostrarEnConsolaConEstilos(data, sexo) {
 
 function maximoLargoPropiedaddeArraydeObjetos(array) {
   const maximos = { name: null, lastname: null, id: null, date: null };
-  const propiedades = {
-    name: "name",
-    lastname: "lastname",
-    id: "id",
-    date: "date",
-  };
 
   Object.keys(maximos).forEach((key) => {
     const arrayValuesForKey = array.map((obj) => obj[key]);
-    arrayValuesForKey.push(propiedades[key]);
+    arrayValuesForKey.push(key);
     maximos[key] = _.maxBy(arrayValuesForKey, (str) => str.length).length;
   });
   return maximos;
